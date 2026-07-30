@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ChantiLogo } from "./ChantiLogo";
 import { 
   MapPin, 
   Phone, 
@@ -319,12 +320,10 @@ export const ContactSection: React.FC = () => {
       {/* 4. FOOTER BRAND BAR (DEEP OCEAN SKY FOOTER)               */}
       {/* ========================================================= */}
       <footer className="py-10 bg-[#0B192C] border-t border-sky-950 text-center space-y-5 text-sky-100">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col items-center justify-center space-y-4">
           
           {/* Brand Logo */}
-          <h3 className="text-2xl font-serif font-black tracking-widest text-white uppercase">
-            CHANTI REAL ESTATE
-          </h3>
+          <ChantiLogo variant="blue" iconSize="w-8 h-8" textSize="lg" />
 
           {/* Links Row */}
           <div className="flex flex-wrap items-center justify-center gap-6 text-[11px] font-mono uppercase tracking-widest text-sky-300/80 pt-1">
@@ -335,8 +334,8 @@ export const ContactSection: React.FC = () => {
           </div>
 
           {/* Copyright */}
-          <p className="text-[10px] text-sky-400/60 font-mono pt-3">
-            © 2026 Chanti Real Estate Visakhapatnam. All Rights Reserved
+          <p className="text-[10px] text-sky-400/60 font-mono pt-1">
+            © 2026 Chanti Infrastructure Visakhapatnam. All Rights Reserved
           </p>
 
         </div>

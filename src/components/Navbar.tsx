@@ -14,6 +14,7 @@ import {
   Search,
   CheckCircle2
 } from "lucide-react";
+import { ChantiLogo } from "./ChantiLogo";
 
 interface NavbarProps {
   favoriteCount: number;
@@ -97,24 +98,9 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Logo & Brand */}
           <div 
             onClick={() => handleNavClick("hero")} 
-            className="flex items-center gap-3 cursor-pointer group"
+            className="cursor-pointer group hover:opacity-95 transition-opacity"
           >
-            <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-400 via-amber-500 to-amber-700 flex items-center justify-center text-slate-950 font-serif font-black text-2xl shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform border border-amber-300/40">
-              C
-            </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <span className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-white group-hover:text-amber-300 transition-colors">
-                  CHANTI
-                </span>
-                <span className="text-xs uppercase tracking-widest bg-amber-500/20 text-amber-300 border border-amber-500/30 px-1.5 py-0.5 rounded font-mono font-semibold">
-                  REAL ESTATE
-                </span>
-              </div>
-              <p className="text-[10px] text-slate-400 tracking-wider uppercase font-sans">
-                Visakhapatnam's Premier Property Advisory
-              </p>
-            </div>
+            <ChantiLogo variant="gold" iconSize="w-8 h-8" textSize="md" />
           </div>
 
           {/* Desktop Nav Links */}

@@ -18,6 +18,7 @@ import towersDuskImage from "../assets/images/hero_modern_towers_1784787886345.j
 import urbanSkylineImg from "../assets/images/home_urban_skyline_1784788609630.jpg";
 import corporateHubImg from "../assets/images/home_corporate_hub_1784788625330.jpg";
 import iconicTowerImg from "../assets/images/home_iconic_tower_1784788639305.jpg";
+import { ChantiLogo } from "./ChantiLogo";
 import { PropertyPurpose } from "../types";
 
 interface HeroProps {
@@ -79,22 +80,7 @@ export const Hero: React.FC<HeroProps> = ({
         {/* Top Header / Branding Bar */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-10 w-full flex items-center justify-between">
           {/* Logo Matching Reference */}
-          <div className="flex items-center gap-3">
-            <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-blue-600/20 border border-blue-500/40 text-blue-400 backdrop-blur-md">
-              <Hexagon className="w-6 h-6 stroke-[1.75]" />
-              <div className="absolute inset-0 flex items-center justify-center text-[10px] font-bold font-mono">
-                CR
-              </div>
-            </div>
-            <div>
-              <div className="text-sm font-black tracking-widest text-white uppercase font-serif">
-                CHANTI INFRASTRUCTURE
-              </div>
-              <p className="text-[10px] font-mono tracking-widest text-blue-400 uppercase">
-                REAL ESTATE & LEGAL ADVISORY
-              </p>
-            </div>
-          </div>
+          <ChantiLogo variant="blue" iconSize="w-8 h-8" textSize="md" />
 
           {/* Action Buttons */}
           <div className="flex items-center gap-3">
@@ -362,13 +348,19 @@ export const Hero: React.FC<HeroProps> = ({
       {/* ========================================================= */}
       <div className="bg-[#0D1627] py-12 border-t border-slate-800 text-left">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#131E33] p-6 rounded-2xl border border-slate-700/80 shadow-2xl space-y-4">
-            <div className="text-xs font-bold uppercase tracking-wider text-blue-400 flex items-center gap-2 font-mono">
-              <Search className="w-4 h-4 text-blue-400" />
-              <span>Search Property Portfolio</span>
+          <div className="bg-[#131E33] p-6 sm:p-8 rounded-2xl border border-slate-700/80 shadow-2xl space-y-5">
+            
+            {/* Search Box Header with Logo & Brand Name */}
+            <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-700/60 pb-4">
+              <ChantiLogo variant="blue" iconSize="w-8 h-8" textSize="md" />
+
+              <div className="text-xs font-bold uppercase tracking-wider text-blue-400 flex items-center gap-2 font-mono bg-blue-950/80 px-3.5 py-1.5 rounded-lg border border-blue-800/60 shadow-inner">
+                <Search className="w-4 h-4 text-blue-400" />
+                <span>Search Portfolio</span>
+              </div>
             </div>
 
-            <form onSubmit={handleSearch} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+            <form onSubmit={handleSearch} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 pt-1">
               <div>
                 <label className="block text-[10px] font-bold text-slate-400 uppercase mb-1">Purpose</label>
                 <select

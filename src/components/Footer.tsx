@@ -1,5 +1,6 @@
 import React from "react";
 import { ShieldCheck, Phone, Mail, MapPin, ArrowUp } from "lucide-react";
+import { ChantiLogo } from "./ChantiLogo";
 
 interface FooterProps {
   onNavClick: (id: string) => void;
@@ -19,22 +20,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavClick }) => {
           
           {/* Brand Col */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 to-amber-700 flex items-center justify-center text-slate-950 font-serif font-black text-2xl shadow-md">
-                C
-              </div>
-              <div>
-                <span className="font-serif font-bold text-xl text-white tracking-tight">
-                  CHANTI REAL ESTATE
-                </span>
-                <p className="text-[10px] text-amber-400 uppercase tracking-widest font-mono">
-                  Visakhapatnam, India
-                </p>
-              </div>
-            </div>
+            <ChantiLogo variant="gold" iconSize="w-8 h-8" textSize="md" />
 
-            <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
-              Visakhapatnam's premier real estate advisory firm, specializing in VMRDA-approved plots, oceanfront sea-facing penthouses, gated apartments, and commercial investments across Beach Road, Rushikonda, Madhurawada, and Bheemili.
+            <p className="text-slate-400 text-xs leading-relaxed max-w-sm pt-2">
+              Visakhapatnam's premier infrastructure and real estate advisory firm, specializing in VMRDA-approved layouts, oceanfront sea-facing penthouses, gated apartments, and commercial investments across Beach Road, Rushikonda, Madhurawada, and Bheemili.
             </p>
 
             <div className="flex items-center gap-2 text-[11px] text-slate-300">

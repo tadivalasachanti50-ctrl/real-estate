@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <!-- Deep Dark Background for high visibility in browser tabs if needed, or sharp black paths -->
+  <rect width="200" height="200" rx="40" fill="#0F172A" />
+  
+  <!-- Skyscraper Silhouette in Gold/Amber and White -->
+  <g fill="#F59E0B">
+    <!-- Horizon Arch -->
+    <path d="M 20 160 Q 100 135 180 160 Q 100 148 20 160 Z" />
+
+    <!-- Middle Main Skyscraper -->
+    <!-- Front Face -->
+    <polygon points="76,55 106,38 106,145 76,148" />
+    <!-- Vertical Window Stripes -->
+    <line x1="84" y1="58" x2="84" y2="147" stroke="#0F172A" stroke-width="2.5" />
+    <line x1="92" y1="53" x2="92" y2="146" stroke="#0F172A" stroke-width="2.5" />
+    <line x1="100" y1="48" x2="100" y2="145" stroke="#0F172A" stroke-width="2.5" />
+
+    <!-- Right Wall of Middle Building -->
+    <polygon points="106,38 126,52 126,144 106,145" fill="#D97706" />
+
+    <!-- Left Skyscraper (with diagonal slatted balconies) -->
+    <polygon points="61,75 92,62 92,148 61,152" fill="#FBBF24" />
+    <!-- Diagonal balcony stripes on left building -->
+    <polygon points="63,90 90,78 90,83 63,95" fill="#0F172A" />
+    <polygon points="63,101 90,89 90,94 63,106" fill="#0F172A" />
+    <polygon points="63,112 90,100 90,105 63,117" fill="#0F172A" />
+    <polygon points="63,123 90,111 90,116 63,128" fill="#0F172A" />
+    <polygon points="63,134 90,122 90,127 63,139" fill="#0F172A" />
+    <polygon points="63,145 90,133 90,138 63,150" fill="#0F172A" />
+
+    <!-- Right Small Skyscraper (with window grid) -->
+    <polygon points="126,102 143,108 143,149 126,145" fill="#F59E0B" />
+
+    <!-- Grid windows on right building -->
+    <rect x="129" y="108" width="5" height="5" fill="#0F172A" rx="0.5" />
+    <rect x="136" y="110" width="5" height="5" fill="#0F172A" rx="0.5" />
+    
+    <rect x="129" y="116" width="5" height="5" fill="#0F172A" rx="0.5" />
+    <rect x="136" y="118" width="5" height="5" fill="#0F172A" rx="0.5" />
+
+    <rect x="129" y="124" width="5" height="5" fill="#0F172A" rx="0.5" />
+    <rect x="136" y="126" width="5" height="5" fill="#0F172A" rx="0.5" />
+
+    <rect x="129" y="132" width="5" height="5" fill="#0F172A" rx="0.5" />
+    <rect x="136" y="134" width="5" height="5" fill="#0F172A" rx="0.5" />
+
+    <rect x="129" y="140" width="5" height="5" fill="#0F172A" rx="0.5" />
+    <rect x="136" y="142" width="5" height="5" fill="#0F172A" rx="0.5" />
+  </g>
+</svg>

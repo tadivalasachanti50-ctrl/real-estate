@@ -1,6 +1,6 @@
 {
   "name": "Chanti Real Estate",
-  "description": "Premier luxury real estate platform in Visakhapatnam (Vizag) showcasing oceanfront apartments, luxury villas, VMRDA-approved plots, and commercial spaces.",
+  "description": "Premier real estate and infrastructure development platform in Visakhapatnam (Vizag) showcasing oceanfront apartments, luxury villas, VMRDA-approved layouts, and commercial developments.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
